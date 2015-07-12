@@ -1,0 +1,20 @@
+
+<!--Application CSS Files-->
+{% for cssFile in cssFiles %}
+	<link rel="stylesheet" href="{{cssFile}}">
+{% endfor %}
+
+<section class="content">
+	<section class="container">
+		{% block content %}{% endblock %}
+	</section>
+</section>
+
+<!--Embedding The User Object-->
+<script type="text/javascript">
+	var user = {{ user | json | safe }};
+</script>
+
+<!--Application JavaScript Files-->
+{% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %} 
+
