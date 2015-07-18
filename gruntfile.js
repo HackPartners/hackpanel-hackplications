@@ -161,6 +161,9 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['lint', 'concurrent:default']);
 
 	// Debug task.
+	grunt.registerTask('dev', ['build', 'concurrent:debug']);
+
+	// Debug task.
 	grunt.registerTask('debug', ['lint', 'concurrent:debug']);
 
 	// Secure task(s).

@@ -7,6 +7,6 @@ module.exports = function(app) {
 	var core = require('../../app/controllers/core.server.controller');
 	app.route('/hackplications.js')
         .get(function(req, res) {
-            res.sendFile(path.join(__dirname, '../../public/', 'application.js'));
+            res.sendFile(path.join(__dirname, '../../public/dist', 'application.min.js'));
         });
 };

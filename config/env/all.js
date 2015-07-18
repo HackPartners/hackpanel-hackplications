@@ -14,8 +14,7 @@ module.exports = {
 			'public/modules/**/css/*.css'
 		],
 		js: [
-			'public/config.js',
-			'public/application.js',
+			'public/modules/*/*.module.js',
 			'public/modules/*/*.js',
 			'public/modules/*/*[!tests]*/*.js'
 		],
